@@ -14,3 +14,7 @@ function updateProfile(userId, data) {
 }
 
 module.exports = { getProfile, updateProfile };
+
+function deleteProfile(userId) {
+  return { id: userId, deleted: true };
+}
